@@ -1,0 +1,22 @@
+{
+  "name": "wave_run",
+  "version": "1.0.0",
+  "main": "js",
+  "scripts": {
+    "test": "js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heleninhaxz/WaveRun.git"
+  },
+  "keywords": [
+    "run"
+  ],
+  "author": "Helena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heleninhaxz/WaveRun/issues"
+  },
+  "homepage": "https://github.com/heleninhaxz/WaveRun#readme",
+  "description": ""
+}
