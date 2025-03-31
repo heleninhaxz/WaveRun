@@ -1,0 +1,88 @@
+.manual-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 37, 89, 0.8); /* Azul médio translúcido para suavidade */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.5); /* Azul claro para destaque */
+}
+.volume-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.volume-button:hover {
+    background-color: #555;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+h1, h2 {
+    color: #ffffff; /* Azul um pouco mais suave */
+    font-weight: bolder;
+}
+
+p, ul, ol {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 1.6em;
+}
+
+body {
+    background: url('img/back3.jpg'); /* Azul médio mais claro para mais conforto visual */
+    color: #ffffff;
+}
+
+.button {
+    background-color: #00bfff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 25px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #009acd;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 204, 255, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003366; /* Azul escuro para um efeito mais agradável */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00bfff;
+}

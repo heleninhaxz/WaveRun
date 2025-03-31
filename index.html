@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icone.png" type="image/png">
+    <link rel="stylesheet" href="style1.css">
+    <script src="start.js" defer></script>
+    <!-- Incluindo o Font Awesome para o ícone de volume -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>WaveRun</title>
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Container para o título e logo -->
+        <div id="title-container">
+            <h1>Bem-vindo ao Jogo WaveRun</h1>
+        </div>
+        <!-- Botões -->
+        <button class="button" onclick="entrarNoJogo()">Iniciar Jogo</button>
+        <button class="button" onclick="irAoManual()">Manual</button>
+
+        <!-- Áudio de fundo -->
+        <audio id="background-music" src="/assets/inicio.mp3" loop></audio>
+
+        <img src="./img/logo_waverun.png" alt="Logo" id="logo">
+    </div>
+
+    <!-- Botão de volume no canto inferior direito -->
+    <button class="volume-button" onclick="controlarMusica()">
+        <i id="volume-icon" class="fas fa-volume-up"></i>
+    </button>
+
+    <script>
+        // Função para iniciar o jogo e tocar a música
+        function entrarNoJogo() {
+            const audio = document.getElementById("background-music");
+            audio.play();  // Inicia a música
+            window.location.href = 'jogo.html'; // Substitua pelo caminho correto da página do jogo
+        }
+
+        // Função para ir ao manual
+        function irAoManual() {
+            window.location.href = 'manual.html'; // Substitua pelo caminho correto da página do manual
+        }
+
+        // Função para controlar o áudio (play/pause) e mudar o ícone de volume
+        function controlarMusica() {
+            const audio = document.getElementById("background-music");
+            const volumeIcon = document.getElementById("volume-icon");
+
+            if (audio.paused) {
+                audio.play();  // Toca a música
+                volumeIcon.classList.remove("fa-volume-mute");  // Remove o ícone de mudo
+                volumeIcon.classList.add("fa-volume-up");      // Adiciona o ícone de volume
+            } else {
+                audio.pause(); // Pausa a música
+                volumeIcon.classList.remove("fa-volume-up");  // Remove o ícone de volume
+                volumeIcon.classList.add("fa-volume-mute");   // Adiciona o ícone de mudo
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icone.png" type="image/png">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Manual do Jogo - WaveRun</title>
+</head>
+<body>
+    <div class="manual-container">
+        <audio id="background-music" src="/assets/inicio.mp3" loop></audio>
+
+        <div class="header">
+            <img src="/img/logo2.png" alt="Logo" class="logo">
+            <h1>Manual do Jogo - WaveRun</h1>
+        </div>
+
+        <button class="volume-button" onclick="controlarMusica()">
+            <i id="volume-icon" class="fas fa-volume-up"></i>
+        </button>
+
+        <br>
+        <h2>Introdução</h2>
+        <p>Bem-vindo ao <strong>WaveRun</strong>, um emocionante jogo de corrida de natação! Você controla um nadador e deve evitar obstáculos enquanto nada o máximo possível sem ser desclassificado.</p>
+        <br>
+        <h2>Objetivo do Jogo</h2>
+        <ul>
+            <li><strong>Evitar colisões</strong> com as boias.</li>
+            <li><strong>Sobreviver</strong> o maior tempo possível para obter a melhor pontuação.</li>
+        </ul>
+        <br>
+        <h2>Controles</h2>
+        <ul>
+            <li><strong>Seta para cima (↑)</strong>: Move o nadador para cima.</li>
+            <li><strong>Seta para baixo (↓)</strong>: Move o nadador para baixo.</li>
+            <li><strong>Botão "Iniciar Jogo"</strong>: Começa a partida a partir da tela de início.</li>
+        </ul>
+        <br>
+        <h2>Regras do Jogo</h2>
+        <ul>
+            <li><strong>Vida:</strong> Você começa com 5 vidas. Cada colisão com as boias ou obstáculos reduz uma vida sua.</li>
+            <li><strong>Pontos:</strong> Sobreviva o máximo possível e evite obstáculos para aumentar sua pontuação.</li>
+            <li><strong>Níveis:</strong> O jogo possui níveis. Ao atingir a quantidade de pontos necessária, você avança para o próximo nível, onde a velocidade dos obstáculos aumenta.</li>
+            <li><strong>Game Over:</strong> O jogo termina quando suas vidas chegam a 0. Você pode reiniciar o jogo a partir da tela de início.</li>
+        </ul>
+        <br>
+        <h2>WaveRun</h2>
+        <p>Prepare-se para uma aventura emocionante na água! Em WaveRun, cada segundo conta, e cada obstáculo é uma oportunidade de testar suas habilidades. Mantenha o foco, evite as boias e nade até alcançar a sua melhor pontuação. Divirta-se e mostre o quanto você consegue nadar longe! Boa sorte!</p>
+        <br>
+        
+        <br>
+        <button class="button"><a href="index.html">Voltar</a></button>
+    </div>
+
+    <script>
+        function controlarMusica() {
+            const audio = document.getElementById("background-music");
+            const volumeIcon = document.getElementById("volume-icon");
+
+            if (audio.paused) {
+                audio.play();
+                volumeIcon.classList.remove("fa-volume-mute");
+                volumeIcon.classList.add("fa-volume-up");
+            } else {
+                audio.pause();
+                volumeIcon.classList.remove("fa-volume-up");
+                volumeIcon.classList.add("fa-volume-mute");
+            }
+        }
+    </script>
+</body>
+</htm>
+
+
+
+        
